@@ -1,0 +1,7 @@
+tasks:
+  - name: Build & verify guava
+    init: mvn clean install
+    command: mvn dependency:tree
+ports:
+  - port: 8080
+    onOpen: ignore
